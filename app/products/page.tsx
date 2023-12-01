@@ -19,8 +19,8 @@ export default function Products() {
             </h1>
 
             {
-                products.map((product) => {
-                    return <div>
+                products.map((product, index) => {
+                    return <div  key={index}>
                         <Link href={`products/${product}`} replace>{product}</Link>
                     </div>
                 })
